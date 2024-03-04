@@ -1,0 +1,452 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ul{list-style-type: none;}
+a{text-decoration: none;}
+p,h1,h2,h3,h4,h5,h6,ul,a{
+    margin: 0;
+    padding: 0;
+}
+body{font-family: Fedra,sans-serif;}
+
+/* HEADER */
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.4rem 3.6rem;
+}
+.menuWrapperList{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    font-weight: 600;
+}
+.menuWrapperList a{color: #1c1d1e;}
+.menuExtra{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.languageButton{
+    width: 3.3rem;
+    height: 3.3rem;
+    border-radius: 50%;
+    color: #1c1d1e;
+    border: 1px solid #00c2e7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+.toggleMenu{
+    width: 3rem;
+    height: 3rem;
+    position: relative;
+    cursor: pointer;
+}
+.toggleMenu::before{
+    content: "";
+    position: absolute;
+    top: 1.125rem;
+    left: .1875rem;
+    width: 2.625rem;
+    height: .125rem;
+    background-color: #00c2e7;
+    border-radius: .25rem;
+}
+.toggleMenu::after{
+    content: "";
+    position: absolute;
+    bottom: 1.125rem;
+    left: .1875rem;
+    width: 2.625rem;
+    height: .125rem;
+    background-color: #00c2e7;
+    border-radius: .25rem;
+}
+#hamburger{
+    width: 0;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: #003;
+    max-width: 40rem;
+    overflow-y: auto;
+    z-index: 99;
+}
+.closeButton img{
+    position: absolute;
+    right: 2.25rem;
+    top: 2.25rem;
+}
+.hamburgerMainMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 11.5rem 0 4rem;
+    padding: 0 5rem;
+}
+.items{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #fff;
+    transition: color .3s ease;
+}
+.items:hover{color: #00c2e7;}
+.hamburgerBottom{padding: 0 2.5rem 5rem 5rem;}
+.hamburgerActions{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: auto;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+.hamburgerLang{
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid rgba(255,255,255,.5);
+    border-radius: 50%;
+    color: #fff;
+    font-size: .6875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hamburgerSocial{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1.5rem;
+}
+.socialMediaButton{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* MAİN */
+
+/* SECTİON-1 */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    max-height: 46vw;
+}
+.swiper-wrapper{bottom: 4rem;}
+.imgText{
+    width: 33%;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+.imgText h1{
+    font-weight: 600;
+    font-size: 6rem;
+    color: #00c2e7;
+}
+.imgText h4{
+    font-weight: 400;
+    font-size: 2rem;
+    color: #fafafa;
+}
+.imgText p{
+    padding: .75rem 0 0;
+    font-weight: 200;
+    font-size: 1.5rem;
+    color: #fff;
+}
+.buttons{
+    padding: 1.5rem 0 0;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.firstButton,.secondButton{
+    width: 14.5rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FAFAFA;
+    border-radius: .5rem; 
+    color: #003;
+}
+
+/* SECTİON-2 */
+
+.morethanAcar{
+    padding: 16rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.morethanAcar h3{
+    font-size: 4rem;
+    text-align: center;
+    color: #00c2e7;
+}
+.morethanAcar p{
+    max-width: 50rem;
+    padding: 1.5rem 1.75rem 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.imageContainer{
+    width: 100%;
+    padding: 10rem 0 0;
+    display: flex;
+    justify-content: center;
+}
+.imageContainer img{width: calc(100% - 5.5rem);}
+
+/* SECTİON-3 */
+
+.emphaty{padding-top: 15rem;}
+.emphaty h3{
+    font-weight: 450;
+    font-size: 11rem;
+    color: #00c2e7;
+    padding: 0 15rem;
+}
+.emphaty p{
+    width: 100%;
+    max-width: 41rem;
+    padding: 0 0 5rem 40%;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #1c1d1e;
+    box-sizing: content-box;
+    white-space: pre-line;
+}
+.centeredImage{
+    padding: 0 16rem;
+    display: flex;
+    justify-content: flex-end;
+    background: linear-gradient(180deg,white 0%,white 50%,#000033 50%,#000033 100%);
+}
+.centeredImage img{width: 56vw;}
+.blueBg{
+    padding-top: 10rem;
+    background: #000033;
+}
+.blueBg h3{
+    font-weight: 450;
+    font-size: 11rem;
+    color: #00c2e7;
+    padding: 0 15rem;
+}
+.blueBg p{color: #fff;}
+.consoleImage{
+    background: transparent;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 15.5rem;
+}
+.consoleImage img{width: 56vw;}
+.mobilityExperience h3{
+    font-weight: 400;
+    font-size: 5rem;
+    text-align: center;
+    color: #fff;
+    padding: 23.5rem 20rem;
+}
+.mobilityExperience span{color:#00c2e7;}
+
+/* SECTİON-4 */
+
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* SECTİON-5 */
+
+.discovery{
+    height: 76vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.discovery img{
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.discovery h1{
+    margin: 8.5rem 0 0;
+    font-size: 6rem;
+    color: #00c2e7;
+}
+.discovery h3{
+    font-size: 3.5rem;
+    color: #fafafa;
+}
+.discovery h6{
+    font-size: 2rem;
+    color: #fafafa;
+    padding: .5rem 0 0;
+}
+.discoveryButtons{
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: 20rem 20rem 20rem;
+    grid-gap: 1.5rem;
+}
+.discoveryButtons a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FAFAFA;
+    border-radius: .5rem;
+    height: 3.5rem;
+    color: #003;
+}
+
+/* SECTİON-6 */
+
+.trumore{display: flex;}
+.left{
+    flex: 0 0 50%;
+    padding: 11rem 15.5rem;
+}
+.left h4{
+    font-size: 4rem;
+    color: #1c1d1e;
+}
+.left p{
+    font-size: 1.5rem;
+    color: #1c1d1e;
+    padding: 1rem .3rem 0 0;
+}
+.trumoreButton{padding: 4rem 0 0;}
+.trumoreButton button{
+    padding: 1.25rem 4.5rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background-color: #000033;
+    border-radius: .5rem;
+    border: none;
+
+}
+.right{flex:1;}
+.right img{
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+/* SECTİON-7 */
+
+.specialDesign{
+    height: 50vw;
+    position: relative;
+}
+.specialDesign img{
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+.specialDesignText{
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.specialDesignText h4{
+    font-size: 4rem;
+    color: #fff;
+}
+.specialDesignText p{
+    padding: 1rem 0 0;
+    font-size: 1.5rem;
+    color: #fff;
+}
+.specialDesignButton{padding: 1.5rem 0 0;}
+.specialDesignButton button{
+    padding: 1.25rem 5rem;
+    display:flex;
+    align-items: center;
+    color: #fafafa;
+    background: transparent;
+    border-radius: .5rem;
+    border: .125rem solid #FAFAFA;
+    outline: none;
+}
+
+/* FOOTER */
+
+footer{background-color: #003;}
+.top{
+    padding-top: 4rem;
+    padding-bottom: 3.5rem;
+}
+.containerTop{padding: 0 5rem;}
+.logoContainer{
+    display: flex;
+    justify-content: flex-start;
+}
+.logo img{width: 17rem;}
+.list1 li,.list2 li{margin-top: 1.5rem;}
+.list1 a{
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 700;
+}
+.list2 a{
+    height: 100%;
+    font-size: 1.09rem;
+    color: #fafafa;
+    font-weight: 100;
+}
+.bottom{
+    border-top: 1px solid rgba(0,194,231,.5);
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+}
+.containerBottom{
+    padding: 0 5rem;
+    color: #fafafa;
+    font-size: 1rem;
+}
+.firstText p{font-size: 1.09rem;}
+.secondText p{
+    margin: .07rem 0 0 .9rem;
+    font-size: 1.09rem;
+    color: #fafafa;
+}
+.socialText a{
+    font-size: 1rem;
+    color: #fafafa;
+}
+.socialMediaButtons{
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+.socialMediaButtons a{
+    width: 1.5rem;
+    height: 1.5rem;
+}
